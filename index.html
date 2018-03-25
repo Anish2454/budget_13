@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!--
-     D3 demo: 
+     D3 demo:
      transitions
    -->
 <!--
@@ -8,7 +8,7 @@
 <!--
      Clyde "Thluffy" Sinclair
      SoftDev2 pd0
-     2099-12-31    
+     2099-12-31
    -->
 
 <html>
@@ -24,13 +24,26 @@
         margin: 1px;
         color: white;
       }
+
+      h1{
+        display: inline;
+      }
     </style>
 
     <script src="http://d3js.org/d3.v3.min.js"
             charset="utf-8"></script>
   </head>
-  
+
   <body>
+    <br>
+    <center>
+      <h1 id="year"> United States Federal Budget for </h1>
+      <br> <br>
+      <h1><pre><u>Revenue</u>      <u>Spending</u></pre></h1>
+      <svg xmlns="https://www.w3.org/2000/svg" width="500" height="600" id="svg">
+      </svg>
+    </center>
+    <br>
     <div class="chart">
     </div>
   </body>
