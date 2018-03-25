@@ -17,11 +17,11 @@
     <title>Demo: D3 Transitions</title>
     <style>
       .chart div {
-        font: 10px sans-serif;
+        font: 12px sans-serif;
         background-color: steelblue;
         text-align: right;
-        padding: 3px;
-        margin: 1px;
+        padding: 30px;
+        margin: 5px;
         color: white;
       }
 
@@ -29,24 +29,28 @@
         display: inline;
       }
     </style>
-
+    
     <script src="http://d3js.org/d3.v3.min.js"
             charset="utf-8"></script>
   </head>
-
+  <div class="chart">
+    <h1> Total Surplus/Defecit </h1>
+  </div>
+  <br>
   <body>
     <br>
     <center>
       <h1 id="year"> United States Federal Budget for </h1>
       <br> <br>
       <h1><pre><u>Revenue</u>      <u>Spending</u></pre></h1>
-      <svg xmlns="https://www.w3.org/2000/svg" width="500" height="600" id="svg">
+      <svg xmlns="https://www.w3.org/2000/svg" width="500" height="320" id="svg">
       </svg>
+      <br>
+      <button id = "switch">Change Year</button>
     </center>
     <br>
-    <div class="chart">
-    </div>
+    
   </body>
-
   <script src="index.js"></script>
+
 </html>
