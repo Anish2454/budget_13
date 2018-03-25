@@ -1,20 +1,8 @@
 <!DOCTYPE html>
-<!--
-     D3 demo:
-     transitions
-   -->
-<!--
-   -->
-<!--
-     Clyde "Thluffy" Sinclair
-     SoftDev2 pd0
-     2099-12-31
-   -->
-
 <html>
   <head>
 	  <meta charset="UTF-8"/>
-    <title>Demo: D3 Transitions</title>
+    <title>The Budget</title>
     <style>
       .chart div {
         font: 12px sans-serif;
@@ -28,28 +16,33 @@
       h1{
         display: inline;
       }
+
+      u{
+        padding-left: 3em;
+        padding-right: 5em;
+      }
     </style>
-    
+
     <script src="http://d3js.org/d3.v3.min.js"
             charset="utf-8"></script>
   </head>
-  <div class="chart">
-    <h1> Total Surplus/Defecit </h1>
-  </div>
-  <br>
   <body>
     <br>
+    <center> <h1> Total Surplus/Defecit </h1> </center>
+    <br>
+    <div class="chart"></div>
+    <br><br>
     <center>
-      <h1 id="year"> United States Federal Budget for </h1>
+      <h1 id="year"></h1>
       <br> <br>
-      <h1><pre><u>Revenue</u>      <u>Spending</u></pre></h1>
-      <svg xmlns="https://www.w3.org/2000/svg" width="500" height="320" id="svg">
+      <h1><pre><u>Revenue</u> <u>Spending</u></pre></h1>
+      <svg xmlns="https://www.w3.org/2000/svg" width="800" height="400" id="svg">
       </svg>
       <br>
       <button id = "switch">Change Year</button>
     </center>
     <br>
-    
+
   </body>
   <script src="index.js"></script>
 
